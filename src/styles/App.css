@@ -55,11 +55,11 @@
   background-color: white;
   font-size: 0.9rem;
 
-  border-bottom: solid 1px #00000020;
+  border-bottom: white;
 }
 
 .email:first-child {
-  border-top: solid 1px #00000020;
+  border-top: white;
 }
 
 .email:hover {
@@ -72,7 +72,11 @@
 }
 
 .email.unread {
-  font-weight: 600;
+  font-weight: bold;
+}
+
+.email.unread {
+  font-weight: bold;
 }
 
 .email .title {
@@ -83,9 +87,10 @@
 
 .email .star-checkbox {
   appearance: none;
-  position: relative;
+  position: absolute;
   display: grid;
   align-content: center;
+  margin-right: 10px;
 }
 
 .email .star-checkbox:focus {
